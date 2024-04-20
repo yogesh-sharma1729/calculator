@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calculator</title>  
+	<link rel="stylesheet" href="calcstyle.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body align="center"> 
+<div class=main> 
+    <div class=title>Calculator<div>  
+	    <input type="text" id="display" class=output disabled>
+    <br> 
+	<div class=row1>
+    <button class=r1c1 onclick="addToDisplay('1')">1</button>
+    <button class=r1c1 onclick="addToDisplay('2')">2</button>
+    <button class=r1c1 onclick="addToDisplay('3')">3</button>
+    <button class=r1c1 onclick="addToDisplay('+')">+</button> 
+	</div>
+    <div class=row1>
+    <button class=r1c1 onclick="addToDisplay('4')">4</button>
+    <button  class=r1c1 onclick="addToDisplay('5')">5</button>
+    <button class=r1c1 onclick="addToDisplay('6')">6</button>
+    <button  class=r1c1 onclick="addToDisplay('-')">-</button> 
+	</div>
+    <div class=row1>
+    <button  class=r1c1 onclick="addToDisplay('7')">7</button>
+    <button  class=r1c1 onclick="addToDisplay('8')">8</button>
+    <button class=r1c1 onclick="addToDisplay('9')">9</button>
+    <button class=r1c1 onclick="addToDisplay('*')">*</button> 
+	</div>
+    <div class=row1>
+    <button class=r1c1 onclick="clearDisplay()">C</button>
+    <button class=r1c1 onclick="addToDisplay('0')">0</button>
+    <button class=r1c1 onclick="calculate()">=</button>
+    <button class=r1c1 onclick="addToDisplay('/')">/</button>
+    </div>
+
+
+
+<script src="calcscript.js"></script>
+</body> 
+
+</html>
