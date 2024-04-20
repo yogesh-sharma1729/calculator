@@ -1,43 +1,48 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>calculator</title>  
-	<link rel="stylesheet" href="calcstyle.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body align="center"> 
-<div class=main> 
-    <div class=title>Calculator<div>  
-	    <input type="text" id="display" class=output disabled>
-    <br> 
-	<div class=row1>
-    <button class=r1c1 onclick="addToDisplay('1')">1</button>
-    <button class=r1c1 onclick="addToDisplay('2')">2</button>
-    <button class=r1c1 onclick="addToDisplay('3')">3</button>
-    <button class=r1c1 onclick="addToDisplay('+')">+</button> 
-	</div>
-    <div class=row1>
-    <button class=r1c1 onclick="addToDisplay('4')">4</button>
-    <button  class=r1c1 onclick="addToDisplay('5')">5</button>
-    <button class=r1c1 onclick="addToDisplay('6')">6</button>
-    <button  class=r1c1 onclick="addToDisplay('-')">-</button> 
-	</div>
-    <div class=row1>
-    <button  class=r1c1 onclick="addToDisplay('7')">7</button>
-    <button  class=r1c1 onclick="addToDisplay('8')">8</button>
-    <button class=r1c1 onclick="addToDisplay('9')">9</button>
-    <button class=r1c1 onclick="addToDisplay('*')">*</button> 
-	</div>
-    <div class=row1>
-    <button class=r1c1 onclick="clearDisplay()">C</button>
-    <button class=r1c1 onclick="addToDisplay('0')">0</button>
-    <button class=r1c1 onclick="calculate()">=</button>
-    <button class=r1c1 onclick="addToDisplay('/')">/</button>
-    </div>
+.main{
+	color:black;
+	background-color:rgba(0,0,255,50%); 
+	width:270px; 
+	height:400px;
+	text-align: left; 
+	border:2px solid black;  
+	font-family:verdana;
 
+} 
 
-
-<script src="calcscript.js"></script>
-</body> 
-
-</html>
+.title{
+	color:black;
+	background-color:gray; 
+	width:270px; 
+	height:2rem;
+	text-align:center; 
+	font-size:1.5rem;
+} 
+.output
+{ 
+   color:white;
+	background-color:black; 
+	width:240px; 
+	height:5rem;
+	text-align: left; 
+	border:2px solid white; 
+	margin-top:0.5rem;
+} 
+.row1{
+	color:white;
+	background-color:rgba(0,0,255,10%); 
+	width:270px; 
+	height:3rem;
+	text-align: left; 
+	margin-top:1rem; 
+	margin-left:0rem;
+}  
+.r1c1{
+	float:left; 
+	width:1.5rem;  
+	background-color:gray;
+	margin-left:1.5rem; 
+	margin-top:0.5rem; 
+	padding:0.2rem 1rem; 
+	border:2px solid blue;
+	
+}
